@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-		/*Stack s  = new Stack(5);
+		Stack s  = new Stack(5);
 		s.push(4);
 		s.push(1);
 		s.push(94);
@@ -24,7 +24,21 @@ public class Main {
 		s.push(6);
 		s.push(10);
 
-		System.out.println(s.getSize());*/
+		System.out.println(s.getSize());
+
+
+
+		java.util.Stack<String> stak = new java.util.Stack<>();
+
+		System.out.println(stak.empty());
+		stak.push("hejsa");
+		System.out.println(stak.empty());
+		System.out.println(stak.peek());
+		System.out.println(stak.search("hejsa"));
+		stak.pop();
+		System.out.println(stak.empty());
+
+
 
 		Queue q = new Queue(7);
 		q.offer(8);
@@ -46,5 +60,17 @@ public class Main {
 		q.offer(25);
 
 		System.out.println(q.getSize());
+
+
+
+		java.util.Queue<String> queue = new java.util.LinkedList<>();
+
+		System.out.println(queue.poll());
+		queue.offer("hejsa");
+		System.out.println(queue.peek());
+		System.out.println(queue.element());
+		queue.remove();
+		System.out.println(queue.poll());
+
     }
 }
